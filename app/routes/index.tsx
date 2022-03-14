@@ -15,7 +15,7 @@ export default function Index() {
           <label className="label">Code:</label> <input className="input" />
         </div>
         <div className="flex justify-center items-center">
-          <div class="flex-grow">
+          <div className="flex-grow">
             <input
               className="submit-button"
               type="submit"
