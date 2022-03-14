@@ -1,4 +1,29 @@
+@font-face {
+  font-family: "rubik";
+  src: url("/fonts/Rubik_Mono_One/RubikMonoOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.heading {
+  font-family: "rubik", serif;
+}
+
+html {
+  height: 100%;
+}
+
 body {
-    background-color: #101010;
-    background-image: linear-gradient(90deg, #101010 0%, #6f6f6f 100%);
+  background-color: #101010;
+  background-image: linear-gradient(90deg, #101010 0%, #6f6f6f 100%);
+  min-height: 100%;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }

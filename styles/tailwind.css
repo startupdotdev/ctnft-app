@@ -3,7 +3,36 @@
 @tailwind utilities;
 
 @layer components {
-  .custom-class {
-    @apply bg-gray-200;
+  .label {
+    @apply block opacity-70 uppercase text-sm;
+  }
+  .input {
+    @apply w-full px-1.5 py-2 text-white;
+    background: rgba(255, 255, 255, 0.3);
+    text-shadow: 0 0 1px black;
+  }
+
+  /* https://gradientbuttons.colorion.co/ */
+  .submit-button {
+    background-image: linear-gradient(
+      to right,
+      #1d976c 0%,
+      #93f9b9 51%,
+      #1d976c 100%
+    );
+  }
+  .submit-button {
+    @apply text-center py-3 px-8 uppercase text-white cursor-pointer;
+    transition: 0.5s;
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    display: block;
+  }
+
+  .submit-button:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
   }
 }

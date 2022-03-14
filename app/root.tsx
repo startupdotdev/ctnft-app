@@ -10,7 +10,7 @@ import {
 import type { MetaFunction } from "remix";
 
 export const meta: MetaFunction = () => {
-  return { title: "New Remix App" };
+  return { title: "CTNFT" };
 };
 
 import tailwindStyles from "app/tailwind.css";
