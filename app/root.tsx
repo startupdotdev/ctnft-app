@@ -13,13 +13,18 @@ export const meta: MetaFunction = () => {
   return { title: "New Remix App" };
 };
 
-import styles from "~/styles/global.css";
+import tailwindStyles from "app/tailwind.css";
+import globalStyles from "~/styles/global.css";
 
 export function links() {
   return [
     {
       rel: "stylesheet",
-      href: styles,
+      href: tailwindStyles,
+    },
+    {
+      rel: "stylesheet",
+      href: globalStyles,
     },
   ];
 }
