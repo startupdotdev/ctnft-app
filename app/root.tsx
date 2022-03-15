@@ -7,6 +7,8 @@ import {
   ScrollRestoration,
 } from "remix";
 
+import Header from "~/components/header";
+
 import type { MetaFunction } from "remix";
 
 export const meta: MetaFunction = () => {
@@ -39,6 +41,7 @@ export default function App() {
         <Links />
       </head>
       <body>
+        <Header />
         <Outlet />
         <ScrollRestoration />
         <Scripts />
