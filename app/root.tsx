@@ -13,7 +13,7 @@ export const meta: MetaFunction = () => {
   return { title: "CTNFT" };
 };
 
-import tailwindStyles from "./tailwind.css";
+import tailwindStyles from "~/tailwind.css";
 import globalStyles from "~/styles/global.css";
 
 export function links() {
