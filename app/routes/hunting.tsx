@@ -5,8 +5,8 @@ export default function Hunting() {
         <form className="flex flex-col w-full max-w-sm">
           <div>
             <p className="font-light opacity-70 mb-8 text-lg">
-              CTNFT is launching a platform to asdlkf asdlfkj asdlfkj asdlkjfa
-              sldfja sldkfjasldkfjasdflkj
+              CTFNFT is a security-themed capture the flag contest seeking
+              non-fungible tokens. Project drops soon sign up to be notified.
             </p>
           </div>
           <div className="mb-4">

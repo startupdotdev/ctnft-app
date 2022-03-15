@@ -20,7 +20,7 @@ export default function Index() {
             <Link to="/hosting">
               <div className="text-6xl -mr-6">👉</div>
               <div className="heading text-3xl">Hosting</div>
-              <div>New CTF.</div>
+              <div>New CTF</div>
             </Link>
           </div>
         </div>
