@@ -1,4 +1,7 @@
 import Logo from "~/components/icons/logo";
+import { Link } from "remix";
+
+import ConnectWallet from "./connect-wallet";
 
 export default function Header() {
   return (
@@ -9,12 +12,16 @@ export default function Header() {
       <div className="flex">
         <div className="flex flex-grow">
           <div className="mr-2">
-            <Logo />
+            <Link to="/">
+              <Logo />
+            </Link>
           </div>
-          <h1 className="heading">CTNFT</h1>
+          <h1 className="heading">
+            <Link to="/">CTNFT</Link>
+          </h1>
         </div>
         <div>
-          <button>Connect Wallet</button>
+          <ConnectWallet />
         </div>
       </div>
     </div>

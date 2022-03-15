@@ -7,8 +7,8 @@ export default function Index() {
           <div>
             <Link to="/hunting">
               <div className="text-6xl -ml-6">👈</div>
-              <div className="heading text-3xl">Huting</div>
-              <div>Sign up to win $$$ and JPGs.</div>
+              <div className="heading text-3xl">Hunting</div>
+              <div>Win JPGs</div>
             </Link>
           </div>
         </div>
@@ -20,7 +20,7 @@ export default function Index() {
             <Link to="/hosting">
               <div className="text-6xl -mr-6">👉</div>
               <div className="heading text-3xl">Hosting</div>
-              <div>Start a new CTF.</div>
+              <div>New CTF.</div>
             </Link>
           </div>
         </div>

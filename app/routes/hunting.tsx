@@ -1,4 +1,4 @@
-export default function Huting() {
+export default function Hunting() {
   return (
     <div>
       <div className="flex flex-col items-center  justify-center align-middle text-white min-h-screen">

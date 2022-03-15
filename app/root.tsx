@@ -11,6 +11,14 @@ import Header from "~/components/header";
 
 import type { MetaFunction } from "remix";
 
+import { Web3ReactProvider } from "@web3-react/core";
+import { Web3Provider } from "@ethersproject/providers";
+import type {
+  ExternalProvider,
+  JsonRpcFetchFunc,
+} from "@ethersproject/providers";
+import type { Json } from "ethers";
+
 export const meta: MetaFunction = () => {
   return { title: "CTNFT" };
 };
@@ -31,6 +39,10 @@ export function links() {
   ];
 }
 
+function getLibrary(provider: ExternalProvider | JsonRpcFetchFunc, connector) {
+  return new Web3Provider(provider);
+}
+
 export default function App() {
   return (
     <html lang="en">
@@ -41,8 +53,10 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <Header />
-        <Outlet />
+        <Web3ReactProvider getLibrary={getLibrary}>
+          <Header />
+          <Outlet />
+        </Web3ReactProvider>
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
