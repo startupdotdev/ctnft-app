@@ -11,3 +11,5 @@ node_modules
 
 /app/tailwind.css
 /app/styles/tailwind.css
+
+.gitignore

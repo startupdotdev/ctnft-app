@@ -6,7 +6,7 @@ import ConnectWallet from "./connect-wallet";
 export default function Header() {
   return (
     <div
-      className="text-white px-2 py-3"
+      className="text-white px-2 py-3 fixed top-0 left-0 w-full"
       style={{ background: "rgba(0,0,0,0.7)" }}
     >
       <div className="flex">

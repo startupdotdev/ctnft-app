@@ -17,11 +17,8 @@ export default function Hunting() {
                 value="Create Contest"
               />
             </div>
-            <div
-              className="text-sm opacity-40 cursor-pointer"
-              onClick={() => alert("ikr!")}
-            >
-              Help?
+            <div className="text-sm opacity-40 cursor-pointer">
+              <Link to="/about">Help?</Link>
             </div>
           </div>
         </form>

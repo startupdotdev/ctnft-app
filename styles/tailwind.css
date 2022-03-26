@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer components {
+  body {
+    @apply text-white;
+  }
   .label {
     @apply block opacity-70 uppercase text-sm;
   }
